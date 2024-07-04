@@ -9,5 +9,6 @@ public class Creacion_De_Objeto_Awake : MonoBehaviour
     {
         GameObject instantiatedPrefab = Instantiate(prefabToInstantiate);
         instantiatedPrefab.transform.position = new Vector3(0, 2, 0);
+        Destroy(instantiatedPrefab, 10f);
     }
 }
